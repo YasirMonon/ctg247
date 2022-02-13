@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Batch || CTG - 247</title>
+</head>
+
+<body>
+    <div>
+
+        <!-- Nav Bar -->
+        <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-white">
+            <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="/" class="flex" alt="home">
+
+                    <span class="self-center text-lg font-semibold whitespace-nowrap dark:text-blue-400"><i
+                            class="fa fa-mouse-pointer" aria-hidden="true"></i> CTG 247</span>
+                </a>
+                <div class="flex items-center md:order-2">
+                    <button type="button"
+                        class="flex mr-3 text-sm bg-gray-800 rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-blue-300"
+                        id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+                        <span class="sr-only">Open user menu</span>
+                        <img class="w-8 h-8 rounded-full" src="/images/profile-picture.png" alt="user photo">
+                    </button>
+
+                    <div class="hidden z-50 my-4 text-base list-none bg-white rounded divide-y divide-gray-100 shadow dark:bg-gray-400 dark:divide-gray-600"
+                        id="dropdown">
+                        <div class="py-3 px-4">
+                            <span class="block text-sm text-gray-900 dark:text-white">Designed & Developed By</span>
+                            <span class="block text-sm font-medium text-gray-500 truncate dark:text-white">Yasir A.
+                                Monon</span>
+                        </div>
+                        <ul class="py-1" aria-labelledby="dropdown">
+                            <li>
+                                <a href="https://github.com/YasirMonon" target="_blank"
+                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-blue-400 dark:text-white dark:hover:text-white">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://www.goodreads.com/author/show/17987393.Yasir_Monon" target="_blank"
+                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-blue-400 dark:text-white dark:hover:text-white">Goodreads</a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/yasir-monon/" target="_blank"
+                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-blue-400 dark:text-white dark:hover:text-white">linkedIn</a>
+                            </li>
+                            <li>
+                                <a href="https://www.yasirmonon.com/" target="_blank"
+                                    class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-blue-400 dark:text-white dark:hover:text-white">Web</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button data-collapse-toggle="mobile-menu-2" type="button"
+                        class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!--  menubar -->
+                <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="mobile-menu-2">
+                    <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                        <!-- <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white"
+                                aria-current="page">Home</a>
+                        </li> -->
+                        <li>
+                            <a data-modal-toggle="defaultModal"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer"><i
+                                    class="fa fa-graduation-cap" aria-hidden="true"></i> Classes</a>
+                        </li>
+                        <li>
+                            <a data-modal-toggle="impLinkModal"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer"><i
+                                    class="fa fa-star" aria-hidden="true"></i> Marks</a>
+                        </li>
+                        <li>
+                            <a data-modal-toggle="practiceModal"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer"><i
+                                    class="fa fa-file-code-o" aria-hidden="true"></i> Practice</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#"
+                                class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 cursor-pointer">Contact</a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <section class="text-gray-600 body-font full-body">
+
+            <div class="container px-5 py-24 mx-auto">
+
+                <!-- Team members -->
+                <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-blue-400 tracking-in-expand">
+                        Welcome to Batch CTG 247
+                    </h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base text-white">This is mainly
+                        an Optional Helping
+                        Site for the Trainees of CTG's Batch 247 (WD)
+                    </p>
+                    <!-- team member small part -->
+                    <div class="mt-10">
+                        <div class="w-48 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-400 dark:border-white dark:text-white"
+                            style="margin: auto;">
+                            <!-- <a data-modal-toggle="teamYasirModal" aria-current="true"
+                            class="block py-2 px-4 w-full text-white  rounded-t-lg border-b border-gray-200 cursor-pointer dark:bg-white dark:border-gray-600">
+                            Team of Yasir
+                        </a> -->
+                            <!-- <a data-modal-toggle="allMemberModal"
+                                class="block py-2 px-4 w-full rounded-t-lg border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-blue-400 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                                All Student of CTG-247
+                            </a> -->
+                            <a data-modal-toggle="teamYasirModal"
+                                class="block py-2 px-4 w-full rounded-t-lg border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-blue-400 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                                Team of Yasir
+                            </a>
+                            <a data-modal-toggle="teamShiblyModal"
+                                class="block py-2 px-4 w-full border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-blue-400 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                                Team of Shibly
+                            </a>
+                            <a data-modal-toggle="teamObaydulModal"
+                                class="block py-2 px-4 w-full border-b border-gray-200 cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-blue-400 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                                Team of Obaydul
+                            </a>
+                            <a data-modal-toggle="teamRamiaModal"
+                                class="block py-2 px-4 w-full rounded-b-lg cursor-pointer hover:bg-gray-100 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-blue-400 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                                Team of Ramia
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex flex-wrap -m-2">
+                    <div class="flex-grow">
+                        <!-- Main modal VDO -->
+                        <div id="defaultModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <div class="relative px-4 w-full max-w-2xl h-full md:h-auto">
+                                <!-- Modal content VDO -->
+                                <div class="relative bg-white rounded-lg shadow dark:bg-white">
+                                    <!-- Modal header -->
+                                    <div
+                                        class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                        <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-blue-400">
+                                            CTG Batch 247 - All Classes
+                                        </h3>
+                                        <button type="button"
+                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                            data-modal-toggle="defaultModal">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body VDO-->
+                                    <div class="p-6 space-y-6">
+                                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        <ul class="list-disc pl-5 dark:text-gray-400 text-gray-500">
+                                            <li><a href="https://youtu.be/3h0DjT6ebwk" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    01</a></li>
+                                            <li><a href="https://youtu.be/oGC2JCgsxcA" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    02</a></li>
+                                            <li><a href="https://youtu.be/PUgusBtAxsI" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    03</a></li>
+                                            <li><a href="https://youtu.be/txAk68Qw4PQ" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    04</a></li>
+                                            <li><a href="https://youtu.be/bWzuozTEGUE" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    05</a></li>
+                                            <li><a href="https://youtu.be/vqKTAvChLAI" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    06</a></li>
+                                            <li><a href="https://youtu.be/43kKHIV4uss" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">CLass
+                                                    07</a></li>
+                                            <li><a href="https://youtu.be/FbfoVOGalIo" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    08</a></li>
+                                            <li><a href="https://youtu.be/P4EHvEmd2i8" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    09</a></li>
+                                            <li><a href="https://youtu.be/w7MLJKQ6Vo0" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    10 (Part 01)</a></li>
+                                            <li><a href="https://youtu.be/NnWRy4QPRyE" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    10 (Part 02)</a></li>
+                                            <li><a href="https://youtu.be/RSbhh4EMUBU" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    11</a></li>
+                                            <li><a href="https://youtu.be/1PdDC-7HtqU" rel="nofollow" target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Class
+                                                    12</a></li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <!-- Modal footer -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main modal Important Links -->
+                        <div id="impLinkModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <div class="relative px-4 w-full max-w-2xl h-full md:h-auto">
+                                <!-- Modal content impLink -->
+                                <div class="relative bg-white rounded-lg shadow dark:bg-white">
+                                    <!-- Modal header impLink -->
+                                    <div
+                                        class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                        <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-blue-400">
+                                            Marks & Important Links
+                                        </h3>
+                                        <button type="button"
+                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                            data-modal-toggle="impLinkModal">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body impLink-->
+                                    <div class="p-6 space-y-6">
+                                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        <ul class="list-disc pl-5 dark:text-gray-400 text-gray-500">
+                                            <li><a href="https://docs.google.com/spreadsheets/d/1b8lnvCT2RGJPDHA88-sjuoQ1TRiyffT_zYEl-BkeWSg/"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Marksheet
+                                                    (HW and Exams)</a>
+                                            </li>
+
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <!-- Modal footer -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Main modal Practice files -->
+                        <div id="practiceModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <div class="relative px-4 w-full max-w-2xl h-full md:h-auto">
+                                <!-- Modal content Practice -->
+                                <div class="relative bg-white rounded-lg shadow dark:bg-white">
+                                    <!-- Modal header Practice -->
+                                    <div
+                                        class="flex justify-between items-start p-5 rounded-t border-b dark:border-gray-600">
+                                        <h3 class="text-xl font-semibold text-gray-900 lg:text-2xl dark:text-blue-400">
+                                            Practice Files (Demo, PSD ETC)
+                                        </h3>
+                                        <button type="button"
+                                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                            data-modal-toggle="practiceModal">
+                                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body practice-->
+                                    <div class="p-6 space-y-6">
+                                        <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                        <ul class="list-disc pl-5 dark:text-gray-400 text-gray-500">
+                                            <li><a href="https://drive.google.com/drive/folders/1UpSm9PNMgTfFXzsI5NF4Aqm2g5VINxWU?usp=sharing"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">All Demo
+                                                    PSD Files
+                                                    (For Practice)</a>
+                                            </li>
+                                            <li><a href="https://drive.google.com/file/d/1r8x0SQ8vqiWAKwZV4NR3y5HPWD-89oMb/view?fbclid=IwAR20WMc8cUqFKwIcz4dz0t2-rTBqE32CLTNwFH8lShlh0iT68iHc63kuD54"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Adobe
+                                                    Photoshop (Software)</a>
+                                            </li>
+                                            <li><a href="https://www.facebook.com/100000271896961/videos/466617864870271/"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Github
+                                                    Class
+                                                    (Only for CTG 247 Members)</a>
+                                            </li>
+                                            <li><a href="https://drive.google.com/file/d/1gWkTE_crgurbjyGGCCukecj5KETpEAFz/view"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Home Work
+                                                    File - MACHE (PSD)</a>
+                                            </li>
+                                            <li><a href="https://drive.google.com/file/d/1oZdkm95mVWV9AT82nOV53p194egArsp1/view"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">First Exam
+                                                    (PSD File)</a>
+                                            </li>
+                                            <li><a href="https://drive.google.com/file/d/14pmsNQPe6uBM4nuoAdOgRxC5EsyaMxYR/view"
+                                                    target="_blank"
+                                                    class="text-blue-600 dark:text-blue-500 hover:underline">Second Exam
+                                                    (PSD File)</a>
+                                            </li>
+
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <!-- Modal footer -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+
+                        <!-- ---- ---- All Member Modal---- ---- -->
+                        <div id="allMemberModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <!-- Modal content all Member-->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header all Member -->
+
+                                <!-- Modal body all Member -->
+                                <div class="">
+
+                                    <div
+                                        class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-white dark:border-gray-700">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-blue-300">
+                                                All Member of CTG 247</h3>
+                                            <button type="button"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-toggle="allMemberModal">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <!-- 
+                                        <div
+                                            class="w-auto text-gray-900 bg-white rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600 dark:text-red-300">
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium rounded-t-lg border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-400 dark:focus:ring-gray-500 dark:focus:text-blue-300">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Mahadi Hasan (CT188945)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Al-aslam Khan (CT188703)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Uttam Kumar (CT188656)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Uttam Kumar (CT188656)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Abdullah Amin (CT188591)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Shibly Khan (CT188569)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Obaydul Kader (CT188031)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Megnath Chondro (CT186616)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Tahmina Tamanna (CT184364)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Sohel Ahammed (CT183697)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Dristy Rahman (CT175734)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Maria Khan (CT167201)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Jabed Iqbal (CT163405)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Ratul Kabir (CT162742)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Jami Al Hasan (CT161948)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Tanmun Rafi (CT154045)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Yasir Monon (CT147373)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Ramia Ahmed (CT142634)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Mahbubul Haque (CT140463)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Mehedi Hasan (CT139045)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Ajoy Kartik Sen (CT112768)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Kutubul Alam (CT111114)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Salahuddin (CT95199)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Momtaj Koly (CT137758)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Shahadat Hossain (CT135086)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Sabikune Naher (CT133380)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Khandoker Tahmid (CT130888)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Jasmin Akter (CT130219)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Mehadi Hasan (CT113731)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Zarin Tasnim (CT93642)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Iftekhairul Islam (CT81893)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Rasel Sarder (CT73497)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-blue-300 dark:focus:ring-gray-500 dark:focus:text-blue-400">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Mahiuddin Imran (CT44849)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Habib Rahman (CT39095)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M5 4a1 1 0 00-2 0v7.268a2 2 0 000 3.464V16a1 1 0 102 0v-1.268a2 2 0 000-3.464V4zM11 4a1 1 0 10-2 0v1.268a2 2 0 000 3.464V16a1 1 0 102 0V8.732a2 2 0 000-3.464V4zM16 3a1 1 0 011 1v7.268a2 2 0 010 3.464V16a1 1 0 11-2 0v-1.268a2 2 0 010-3.464V4a1 1 0 011-1z">
+                                                    </path>
+                                                </svg>
+                                                Esita Jahan (CT36579)
+                                            </div>
+                                            <div
+                                                class="inline-flex relative items-center py-2 px-4 w-full text-sm font-medium rounded-b-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 dark:border-gray-600 dark:hover:bg-gray-600 dark:hover:text-white dark:focus:ring-gray-500 dark:focus:text-white">
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Foysal (CT117695)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Sabbir Ahmed (CT27802)
+                                                <svg class="mr-2 w-4 h-4 fill-current" fill="currentColor"
+                                                    viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M2 9.5A3.5 3.5 0 005.5 13H9v2.586l-1.293-1.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 15.586V13h2.5a4.5 4.5 0 10-.616-8.958 4.002 4.002 0 10-7.753 1.977A3.5 3.5 0 002 9.5zm9 3.5H9V8a1 1 0 012 0v5z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                                Lamiya Akter (CT185575)
+                                            </div>
+                                        </div>
+ -->
+                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+
+                        <!-- Team Modal Total Yasir -->
+                        <div id="teamYasirModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <!-- Modal content Yasir-->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header Yasir -->
+
+                                <!-- Modal body Yasir -->
+                                <div class="">
+
+                                    <div
+                                        class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-white dark:border-gray-700">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-blue-300">
+                                                Team Yasir</h3>
+                                            <button type="button"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-toggle="teamYasirModal">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="flow-root">
+                                            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Ratul image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Ratul Kabir
+                                                            </p>
+
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 162742
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Rasel image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Md.Rasel Sarder
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 73497
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Aslam image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Al Aslam Khan
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 188703
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-2.png" alt="Esita image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Esita Jahan
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 36579
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pt-3 pb-0 sm:pt-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Rafi image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Tanmun Rafi
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 154045
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+
+                        <!-- Team Modal Total Shibly -->
+                        <div id="teamShiblyModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <!-- Modal content Shibly-->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header Shibly -->
+
+                                <!-- Modal body Shibly -->
+                                <div class="">
+
+                                    <div
+                                        class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-white dark:border-gray-700">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-blue-300">
+                                                Team Shibly</h3>
+                                            <button type="button"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-toggle="teamShiblyModal">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="flow-root">
+                                            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Jami image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Jami Al Hasan
+                                                            </p>
+
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 161948
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Sohel image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Sohel Ahammed
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 183697
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Uttam image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Uttam Kumar
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 188656
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Naquib image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Jabed Iqbal Naquib
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 163405
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png"
+                                                                alt="Shahadat image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Shahadat Hossain
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 135086
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pt-3 pb-0 sm:pt-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Mehadi image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Mehadi Hasan
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 113731
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+
+                        <!-- Team Modal Total Obaydul -->
+                        <div id="teamObaydulModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <!-- Modal content Obaydul-->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header Obaydul -->
+
+                                <!-- Modal body Obaydul -->
+                                <div class="">
+
+                                    <div
+                                        class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-white dark:border-gray-700">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-blue-300">
+                                                Team Obaydul</h3>
+                                            <button type="button"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-toggle="teamObaydulModal">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="flow-root">
+                                            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Kutub image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Kutubul Alam
+                                                            </p>
+
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 111114
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Megnath image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Megnath Chondro
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 186616
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Megnath image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Ajoy Sen
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 112768
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-2.png" alt="Maria image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Maria Khan Wriddhi
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 167201
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Tahmid image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Tahmid Sami
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 130888
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pt-3 pb-0 sm:pt-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png"
+                                                                alt="Abdullah image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Abdullah Amin
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 188591
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+
+                        <!-- Team Modal Total Ramia -->
+                        <div id="teamRamiaModal" aria-hidden="true"
+                            class="hidden overflow-y-auto overflow-x-hidden fixed right-0 left-0 top-4 z-50 justify-center items-center h-modal md:h-full md:inset-0">
+                            <!-- Modal content Ramia-->
+                            <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                                <!-- Modal header Ramia -->
+
+                                <!-- Modal body Ramia -->
+                                <div class="">
+
+                                    <div
+                                        class="p-4 max-w-md bg-white rounded-lg border shadow-md sm:p-8 dark:bg-white dark:border-gray-700">
+                                        <div class="flex justify-between items-center mb-4">
+                                            <h3 class="text-xl font-bold leading-none text-gray-900 dark:text-blue-300">
+                                                Team Ramia</h3>
+                                            <button type="button"
+                                                class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                                                data-modal-toggle="teamRamiaModal">
+                                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd"
+                                                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="flow-root">
+                                            <ul role="list" class="divide-y divide-gray-200 dark:divide-gray-700">
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-2.png" alt="Tahmina image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Tahmina Tamanna
+                                                            </p>
+
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 184364
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-2.png" alt="Lamiya image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Lamiya Akter
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 185575
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-2.png" alt="Dristy image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Dristy Rahman
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 175734
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-2.png" alt="Sabikun image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Sabikun Naher
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 133380
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="py-3 sm:py-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Mehedi image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Mehedi Hasan
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 139045
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="pt-3 pb-0 sm:pt-4">
+                                                    <div class="flex items-center space-x-4">
+                                                        <div class="flex-shrink-0">
+                                                            <img class="w-8 h-8 rounded-full"
+                                                                src="/images/profile-picture-1.png" alt="Imran image">
+                                                        </div>
+                                                        <div class="flex-1 min-w-0">
+                                                            <p
+                                                                class="text-sm font-medium text-gray-900 truncate dark:text-gray">
+                                                                Mahiuddin Imran
+                                                            </p>
+                                                        </div>
+                                                        <div
+                                                            class="inline-flex items-center text-base font-semibold text-gray-900 dark:text-gray">
+                                                            CT 44849
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Modal footer -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg cursor-pointer all-classes"
+                            data-modal-toggle="defaultModal">
+                            <img alt="team"
+                                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                                src="https://i.pinimg.com/originals/0b/3c/61/0b3c610408b885d01c878e4fd1568461.gif">
+                            <div class="flex-grow">
+                                <a class="text-white title-font font-medium">
+                                    All Classes
+
+                                </a>
+                                <p class="text-white">Links of All Classes</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg cursor-pointer practice"
+                            data-modal-toggle="practiceModal">
+                            <img alt="team"
+                                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                                src="https://i.pinimg.com/originals/cf/e6/7c/cfe67cc0dcc0290f87a3e1b8c6b13bd7.gif">
+                            <div class="flex-grow">
+                                <a class="text-white title-font font-medium cursor-pointer">
+                                    Practice Files
+
+                                </a>
+                                <p class="text-white"> PSD , Demo & Other Files</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+                        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg cursor-pointer marks"
+                            data-modal-toggle="impLinkModal">
+                            <img alt="team"
+                                class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+                                src="https://www.stematix.org/uploads/9/7/2/6/97262924/stematix-website-1_orig.gif">
+                            <div class="flex-grow">
+                                <a class="text-white title-font font-medium">
+                                    Marksheet
+
+                                </a>
+                                <p class="text-white"> Marks of Homeworks & Exam</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+    </div>
+    <script src=" https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+</body>
+
+</html>
