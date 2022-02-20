@@ -12,6 +12,29 @@ body{
 	-webkit-animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 	        animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+
+
+/**
+ * ----------------------------------------
+ * swal modal css modify
+ * ----------------------------------------
+ */
+
+ .swal2-styled.swal2-confirm{
+   /* display: none !important; */
+   background-color: #dd2e43 !important;
+   margin-top: -13em;
+   width: 7em;
+ }
+
+ .swal2-popup{
+   background: #ffffff00 !important;
+   
+ }
+ .swal2-container.swal2-backdrop-show{
+   background: rgba(0,0,0,.6) !important;
+ }
+
 /**
  * ----------------------------------------
  * animation tracking-in-expand
