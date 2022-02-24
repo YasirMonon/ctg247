@@ -20,20 +20,19 @@ body{
  * ----------------------------------------
  */
 
- .swal2-styled.swal2-confirm{
-   /* display: none !important; */
+ /* .swal2-styled.swal2-confirm{
    background-color: #dd2e43 !important;
    margin-top: -13em;
    width: 7em;
- }
+ } */
 
- .swal2-popup{
+ /* .swal2-popup{
    background: #ffffff00 !important;
    
- }
- .swal2-container.swal2-backdrop-show{
+ } */
+ /* .swal2-container.swal2-backdrop-show{
    background: rgba(0,0,0,.6) !important;
- }
+ } */
 
 /**
  * ----------------------------------------

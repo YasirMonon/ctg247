@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+    <!-- jQuery for Pop Up -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<script>
+
+    $(document).ready(function () {
+        Swal.fire({
+            title: 'Submit your CT ID',
+            input: 'text',
+            inputPlaceholder: 'Your ID (etc: ctXXXXXX)',
+            inputAttributes: {
+                autocapitalize: 'off'
+            },
+            showCancelButton: true,
+            confirmButtonText: 'Look up',
+            showLoaderOnConfirm: true,
+            preConfirm: (login) => {
+                return fetch(`./${login}.json`)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(response.statusText)
+                        }
+                        return response.json()
+                    })
+                    .catch(error => {
+                        Swal.showValidationMessage(
+                            `Request failed: ${error}`
+                        )
+                    })
+            },
+            allowOutsideClick: () => !Swal.isLoading()
+        }).then((result) => {
+            if (result.isConfirmed) {
+                Swal.fire({
+                    title: `${result.value.login}'s Info`,
+                    imageUrl: result.value.avatar,
+                    imageHeight: 100,
+                    text: result.value.location,
+                    text: result.value.hw_total_marks,
+                    // text: `এখানে সব শো করবে, যেমন , কোথায় থাকি ${result.value.location}`,
+
+                })
+            }
+        })
+    });
+
+</script>
+
+
+<body>
+
+</body>
+
+</html>
